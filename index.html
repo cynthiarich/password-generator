@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+  <title>Password Generator</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container no-padding">
+      <a class="navbar-brand navbar-img" href="index.html">Cynthia Rich</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <div class="row my-5">
+        <div class="col-lg-8 col-md-12 bg-light border border-ccc">
+          <h1 class="my-4 border-bottom">Generate a password</h1>
+          <div class="row my-4">
+            <div class="col-8">
+              <form>
+                <div class="form-group">
+                  <h4>Length: <span class="pwlength">8</span> characters</h4>
+                  <input type="range" min="8" max="128" value="8" class="form-control-range" id="length">
+                </div>
+              </form>
+            </div>
+            <div class="col-4">
+              <h4>Include</h4>
+              <div id="charInput">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="uppercase" checked>
+                  <label class="form-check-label" for="uppercase">
+                    Uppercase
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="lowercase" checked>
+                  <label class="form-check-label" for="lowercase">
+                    Lowercase
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="numeric" checked>
+                  <label class="form-check-label" for="numeric">
+                    Numeric
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="special" checked>
+                  <label class="form-check-label" for="special">
+                    Special Characters
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row py-2">
+            <div class="col-12 border-top border-bottom mx-auto">
+              <div class="pw-text text-center">
+                <button id="copypw">Copy</button>
+                <samp id="newpassword" class="text-wrap">Your secure password</samp>
+              </div>
+            </div>
+          </div>
+          <div class="row py-4">
+            <div class="col-12 mx-auto d-flex">
+                <button type="button" id="generate" class="btn btn-primary btn-lg ml-auto mr-1">Generate Password</button>
+                <!--<button type="button" class="btn btn-secondary btn-lg mr-auto ml-1">Copy Password</button>-->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+      <div class="container">
+          <p class="text-center text-white-50"><small>&copy; Copyright 2019 Cynthia Rich. All Rights Reserved.</small>
+          </p>
+      </div>
+  </footer>
+
+  <script src="./assets/script.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
